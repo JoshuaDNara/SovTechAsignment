@@ -4,28 +4,52 @@
 
 .main {
   min-height: 100vh;
-  padding: 4rem 0;
+  padding: 4rem;
   flex: 1;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
 }
+.header{
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  
+  background-color: darkred;
+  width : 100%;
+  position: fixed;
+  top: 0;
+}
+.header li{
+  float: left;
+}
+
+.header li a{
+  display: block;
+  color: white;
+  text-align: center;
+  padding:15px 10px;
+  text-decoration: none;
+  font-size:30px;
+  
+}
+.header li a:hover{
+  background-color: rgb(184, 39, 39);
+}
 
 .footer {
-  display: flex;
-  flex: 1;
-  padding: 2rem 0;
+  width:100%;
   border-top: 1px solid #eaeaea;
   justify-content: center;
   align-items: center;
+  background-color: darkred;
+  position: fixed;
+  bottom: 0;
 }
 
 .footer a {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-grow: 1;
+  display: inline;
 }
 
 .title a {

@@ -6,12 +6,8 @@ const navBarList =[{hyperlink:"#top",text:"Joshua Du Plooy"},
 {hyperlink:"#Skills",text:"Skills List"},
 ];
 function Item(props){
-    return(
-            
-            <li key={props.index}><a href={props.hyperlink}>{props.text}</a></li>
-               
-            
-
+    return(      
+            <li><a href={props.hyperlink}>{props.text}</a></li>
     )
 }
 export default function Header(){
@@ -19,7 +15,7 @@ export default function Header(){
         <header>
                 
                  <ul class={styles.header}>
-                    {navBarList.map((toplevel,index) => <Item  hyperlink={toplevel.hyperlink} text={toplevel.text} index={index}/>)}
+                    {navBarList.map((toplevel) => <Item  key={toplevel.id} hyperlink={toplevel.hyperlink} text={toplevel.text}/>)}
                     
                 </ul>
             
